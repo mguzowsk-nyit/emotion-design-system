@@ -182,3 +182,16 @@
     border-right-color: var(--border);
   }
 }
+
+.app__content img {
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.app__actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
