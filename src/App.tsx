@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -6,7 +5,7 @@ import './App.css'
 import DownloadButton from './components/atoms/DownloadButton/DownloadButton'
 
 function App() {
-  const [count] = useState(0)
+  // no local state required for the demo
 
   return (
     <main>

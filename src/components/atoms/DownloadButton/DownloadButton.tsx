@@ -18,7 +18,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({
   ariaLabel,
   disabled = false,
 }) => {
-  const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = async () => {
     if (disabled) return
     if (onClick) onClick()
 
