@@ -23,10 +23,9 @@ export default function Navbar(){
                 <span>emotion-design-system</span>
             </Logo>
             <Links>
-                <li><Link href="/">Home</Link></li>
                 <li><Link href="/components">Components</Link></li>
+                <li><Link href="/tokens">Tokens</Link></li>
                 <li><Link href="/docs">Documentation</Link></li>
-                <li><Link href="/about">About</Link></li>
             </Links>
         </Nav>
     )
