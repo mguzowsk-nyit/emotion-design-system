@@ -20,7 +20,7 @@ export default function Navbar(){
         <Nav role="navigation" aria-label="Main navigation">
             <Logo>
                 <img src={logo} alt="Logo" style={{width:36,height:36}} />
-                <span>Design System</span>
+                <span>emotion-design-system</span>
             </Logo>
             <Links>
                 <li><Link href="/">Home</Link></li>
