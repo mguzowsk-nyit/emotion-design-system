@@ -6,14 +6,14 @@ const FooterContainer = styled.footer`
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
+    background-color: ${p => p.theme.colors.surface};
+    border-top: 1px solid rgba(0,0,0,0.06);
 `;
 
 const Copyright = styled.p`
     margin: 0;
     font-size: 0.875rem;
-    color: #666;
+    color: ${p => p.theme.colors.muted};
 `;
 
 const SocialLinks = styled.div`
@@ -22,17 +22,15 @@ const SocialLinks = styled.div`
 `;
 
 const SocialLink = styled.a`
-    color: #007bff;
+    color: ${p => p.theme.colors.primaryStart};
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+    &:hover { text-decoration: underline; }
 `;
 
 const Footer = () => {
     return (
         <FooterContainer>
-            <Copyright>&copy; 2023 Emotion Design System. All rights reserved.</Copyright>
+            <Copyright>&copy; {new Date().getFullYear()} Emotion Design System. All rights reserved.</Copyright>
             <SocialLinks>
                 <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</SocialLink>
                 <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</SocialLink>
